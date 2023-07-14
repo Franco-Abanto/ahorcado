@@ -1,0 +1,147 @@
+body{
+    text-align: center;
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-font-smoothing: antialiased;
+    background: #EEEEEE;
+}
+
+.center{
+    width: 75%;
+    margin: 0px auto;
+}
+
+.clearfix{
+    clear: both;
+    float: none;
+}
+
+#header{
+    height: 88px;
+    width: 100%;
+    background: #242526;
+    color: white;
+    border-bottom: 1px solid #ccc;
+}
+
+#logo{
+    width: 30%;
+    font-size: 30px;
+    float: left;
+    margin-top: 20px;
+}
+
+#logo img{
+    display: block;
+    float: left;
+    height: 60px;
+    margin-top: -7px;
+    margin-right: -10px;
+    transition: 200ms all;
+}
+
+#logo img:hover{
+    transform: scale(1.18);
+}
+
+#brand{
+    display: block;
+    margin: 5px;
+    margin-left: 20px;
+    margin-top: 10px;
+    float: left;
+    font-size: 23px;
+    
+}
+
+#menu{
+    width: 30%;
+    float: right;
+}
+
+
+#menu ul{
+    line-height: 60px;
+    width: 60%;
+    float: right;
+    
+}
+
+#menu ul li{
+    display: inline-block;
+    list-style: none;
+    height: 46px;
+    margin-left: 15px;
+    margin-right: 15px;
+
+}
+
+#menu a{
+    text-decoration: none;
+    color: white;
+}
+
+#ahorcado{
+    margin-bottom: 50px;
+    margin-top: 50px;
+}
+
+#ahorcado img{
+    width: 350px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+#letras{
+    width: 900px;
+    height: 200px;
+    margin: 0px auto;
+    margin-bottom: 50px;
+    margin-top: 70px;
+}
+
+#letras button{
+    margin-left: 5px;
+    margin-right: 5px;
+    margin-top: 15px;
+    display: block;
+    float: left;
+}
+
+.btn-primary{
+    width: 55px;
+    height: 40px;
+    position: relative;
+    border: none;
+    outline:none;
+    cursor: pointer;
+    background: #444;
+    color: white;
+    border-radius: 5px;
+    font-size: 20px;
+}
+
+.btn-primary:hover{
+    color: #444;
+    background: #3FB984;
+}
+
+.btn-primary.disabled,
+.btn-primary:disabled {
+    color: #444;
+    background-color: #96e7c4 !important;
+    border-color: #96e7c4 !important;
+}
+
+
+.btn-secondary{
+    width: auto;
+    height: auto;
+    padding: 10px 15px;
+    border: none;
+    cursor: pointer;
+    background: #29B542;
+    border-radius: 5px;
+    font-size: 20px;
+}

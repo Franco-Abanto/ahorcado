@@ -1,0 +1,35 @@
+
+<div>
+    <h2 #asPalabra class="palabra" id="palabra">Palabra: {{ palabraOculta }}</h2>
+    <h3>Vidas: {{ 6 - intentos }}</h3>
+</div>
+
+<div id="ahorcado">
+    <img src="../../../assets/images/{{intentos}}.png">
+</div>
+
+<div *ngIf="win"> <!--Directiva-->
+    <div>
+        <h3>Ganaste!</h3>
+        <button class="btn-secondary" (click)="reload()">Jugar Nuevamente</button>
+    </div>
+</div>
+<div *ngIf="lost">
+    <div>
+        <h3>Perdiste!</h3>
+        <h3>La palabra era: {{ palabra }}</h3>
+        <button class="btn-secondary" (click)="reload()">Jugar Nuevamente</button>
+    </div>
+</div>
+
+<div *ngIf="!win && !lost">
+    <div id="letras">
+        <button class="btn-primary" id="btn-{{letra}}" (click)="verificar(letra)"  *ngFor="let letra of letras">
+            {{ letra }}
+        </button>
+    </div>
+</div >
+
+
+
+
