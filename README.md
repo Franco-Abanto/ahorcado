@@ -1,27 +1,100 @@
-# Ahorcado
+# Juego del Ahorcado
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.2.4.
+Este proyecto es una implementación del clásico juego del ahorcado desarrollada con Angular. Los jugadores intentan adivinar una palabra secreta letra por letra antes de que se complete el dibujo del ahorcado.
 
-## Development server
+## Características
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+- **Interfaz Interactiva**: Una interfaz de usuario amigable que responde dinámicamente a las interacciones del jugador.
+- **Gestión de Estados**: Manejo eficiente de los estados del juego, incluyendo letras adivinadas, intentos restantes y finalización del juego.
+- **Componentización**: Uso de componentes de Angular para estructurar y organizar el código de manera modular.
 
-## Code scaffolding
+## Requisitos Previos
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+Antes de comenzar, asegúrate de tener instalado lo siguiente:
 
-## Build
+- [Node.js](https://nodejs.org/) (versión 14 o superior)
+- [Angular CLI](https://angular.io/cli) (versión 13.2.4 o superior)
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+## Instalación
 
-## Running unit tests
+1. **Clonar el repositorio:**
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+   ```bash
+   git clone https://github.com/Franco-Abanto/ahorcado.git
+   ```
 
-## Running end-to-end tests
+2. **Navegar al directorio del proyecto:**
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+   ```bash
+   cd ahorcado
+   ```
 
-## Further help
+3. **Instalar las dependencias:**
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+   ```bash
+   npm install
+   ```
+
+## Ejecución del Servidor de Desarrollo
+
+Para iniciar el servidor de desarrollo, ejecuta:
+
+```bash
+ng serve
+```
+
+Luego, abre tu navegador y navega a `http://localhost:4200/`. La aplicación se recargará automáticamente si realizas cambios en los archivos fuente.
+
+## Generación de Componentes
+
+Para generar un nuevo componente, utiliza el siguiente comando:
+
+```bash
+ng generate component nombre-del-componente
+```
+
+También puedes generar directivas, pipes, servicios, clases, guards, interfaces, enums y módulos con comandos similares.
+
+## Construcción del Proyecto
+
+Para compilar el proyecto, ejecuta:
+
+```bash
+ng build
+```
+
+Los archivos compilados se almacenarán en el directorio `dist/`.
+
+## Ejecución de Pruebas Unitarias
+
+Para ejecutar las pruebas unitarias, utiliza:
+
+```bash
+ng test
+```
+
+Esto ejecutará las pruebas a través de [Karma](https://karma-runner.github.io).
+
+## Ejecución de Pruebas End-to-End
+
+Para ejecutar las pruebas end-to-end, utiliza:
+
+```bash
+ng e2e
+```
+
+Esto ejecutará las pruebas utilizando la plataforma de tu elección.
+
+## Contribuciones
+
+Si deseas contribuir a este proyecto:
+
+1. Realiza un fork del repositorio.
+2. Crea una nueva rama con tu funcionalidad o corrección: `git checkout -b mi-nueva-funcionalidad`.
+3. Realiza tus cambios y haz commit: `git commit -m 'Agregar nueva funcionalidad'`.
+4. Envía tus cambios al repositorio remoto: `git push origin mi-nueva-funcionalidad`.
+5. Abre una solicitud de pull en GitHub.
+
+## Licencia
+
+Este proyecto está bajo la Licencia MIT. Consulta el archivo `LICENSE` para más detalles.
